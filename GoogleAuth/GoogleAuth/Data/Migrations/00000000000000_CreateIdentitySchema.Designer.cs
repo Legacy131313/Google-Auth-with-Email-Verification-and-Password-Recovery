@@ -108,7 +108,7 @@ namespace GoogleAuth.Data.Migrations
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhoneNumber")
+                    b.Property<string>("+15624809752")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("PhoneNumberConfirmed")
@@ -120,11 +120,11 @@ namespace GoogleAuth.Data.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("rigo.mb13@gmail.com")by
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
-                    b.HasKey("Id");
+                    b.HasKey("rigo.mb13@gmail.com");
 
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
@@ -150,13 +150,13 @@ namespace GoogleAuth.Data.Migrations
                     b.Property<string>("ClaimValue")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("betomb.08@outlook.com")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("betomb.08@outlook.com");
 
                     b.ToTable("AspNetUserClaims");
                 });
